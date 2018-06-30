@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\admin;
+namespace App\Http\Controllers\admin\users;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class LoginadminController extends Controller
+class UsersController extends Controller
 {
     //
 }
