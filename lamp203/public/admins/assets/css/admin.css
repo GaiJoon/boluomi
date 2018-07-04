@@ -317,7 +317,8 @@ ul {
 }
 
 .table-main button {
-  background: #fff;
+  background: red;
+  color:#fff;
 }
 
 .table-check {

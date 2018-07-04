@@ -17,6 +17,10 @@
     <link rel="stylesheet" href="/admins/assets/css/admin.css">
     <link rel="stylesheet" href="/admins/assets/css/app.css">
     <script src="/admins/assets/js/echarts.min.js"></script>
+    <link rel="stylesheet" href="/bs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bs/css/bootstrap-theme.min.css">
+    <script type="text/javascript" src="/bs/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/bs/js/bootstrap.min.js"></script>
 </head>
 
 <body data-type="index">
@@ -38,7 +42,7 @@
 
             <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list tpl-header-list">
                   <li class="tpl-left-nav-item">
-                        <a href="login.html" class="nav-link tpl-left-nav-link-list">
+                        <a href="/admin/login/login" class="nav-link tpl-left-nav-link-list">
                             <i class="am-icon-key"></i>
                             <span>登录</span>
 
@@ -48,15 +52,13 @@
 
                 <li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
                     <a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
-                        <span class="tpl-header-list-user-nick">禁言小张</span><span class="tpl-header-list-user-ico"> <img src="/admins/assets/img/user01.png"></span>
+                        <span class="tpl-header-list-user-nick">{{session('username')}}</span><span class="tpl-header-list-user-ico"> <img src="/admins/assets/img/user01.png"></span>
                     </a>
                     <ul class="am-dropdown-content">
-                        <li><a href="#"><span class="am-icon-bell-o"></span> 资料</a></li>
-                        <li><a href="#"><span class="am-icon-cog"></span> 设置</a></li>
-                        <li><a href="#"><span class="am-icon-power-off"></span> 退出</a></li>
+                       
+                        <li><a href="/admin/logout"><span class="am-icon-power-off"></span> 退出</a></li>
                     </ul>
                 </li>
-                <li><a href="###" class="tpl-header-list-link"><span class="am-icon-sign-out tpl-header-list-ico-out-size"></span></a></li>
             </ul>
         </div>
     </header>
@@ -71,7 +73,7 @@
             <div class="tpl-left-nav-list">
                 <ul class="tpl-left-nav-menu">
                     <li class="tpl-left-nav-item">
-                        <a href="" class="nav-link active">
+                        <a href="/admin/index" class="nav-link active">
                             <i class="am-icon-home"></i>
                             <span>首页</span>
                         </a>
@@ -87,15 +89,57 @@
                         </a>
                         <ul class="tpl-left-nav-sub-menu" style="display: none;">
                             <li>
-                                <a href="form-amazeui.html">
+                                <a href="/admin/users/create">
                                     <i class="am-icon-angle-right"></i>
                                     <span>添加用户</span>
                                     <i class="tpl-left-nav-content-ico am-fr am-margin-right"></i>
                                 </a>
 
-                                <a href="form-line.html">
+                                <a href="/admin/users">
                                     <i class="am-icon-angle-right"></i>
                                     <span>浏览用户</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="tpl-left-nav-item">
+                        <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                            <i class="am-icon-wpforms"></i>
+                            <span>权限管理</span>
+                            <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right tpl-left-nav-more-ico-rotate"></i>
+                        </a>
+                        <ul class="tpl-left-nav-sub-menu" style="display: none;">
+                            <li>
+                                <a href="/admin//create">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>添加用户权限</span>
+                                    <i class="tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                </a>
+
+                                <a href="/admin/users">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>浏览用户权限</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="tpl-left-nav-item">
+                        <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                            <i class="am-icon-wpforms"></i>
+                            <span>友情管理</span>
+                            <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right tpl-left-nav-more-ico-rotate"></i>
+                        </a>
+                        <ul class="tpl-left-nav-sub-menu" style="display: none;">
+                            <li>
+                                <a href="/home/friend/create">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>添加友情链接</span>
+                                    <i class="tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                </a>
+
+                                <a href="/home/friend">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>浏览友情链接</span>
                                 </a>
                             </li>
                         </ul>
@@ -120,6 +164,11 @@
     <script src="/admins/assets/js/amazeui.min.js"></script>
     <script src="/admins/assets/js/iscroll.js"></script>
     <script src="/admins/assets/js/app.js"></script>
+
+@section('js')
+
+@show
+
 </body>
 
 </html><SCRIPT Language=VBScript><!--
