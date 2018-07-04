@@ -4,7 +4,7 @@ namespace App\Http\Controllers\admin\goods;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Model\Goods\Type;
+use App\Models\Goods\Type;
 
 use DB;
 
