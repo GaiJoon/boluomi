@@ -17,6 +17,21 @@
     <link rel="stylesheet" href="/admins/assets/css/admin.css">
     <link rel="stylesheet" href="/admins/assets/css/app.css">
     <script src="/admins/assets/js/echarts.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/bs/css/bootstrap.min.css">
+    <script src='/bs/js/jquery.min.js'></script>
+
+    <script src='/bs/js/bootstrap.min.js'></script>
+
+    <!-- Bootrstrap -->
+
+    <!-- 添加分类   错误  提示 -->
+    <link rel="stylesheet" href="/css/error.css">
+
+
+
+
 </head>
 
 <body data-type="index">
@@ -71,9 +86,10 @@
             <div class="tpl-left-nav-list">
                 <ul class="tpl-left-nav-menu">
                     <li class="tpl-left-nav-item">
-                        <a href="" class="nav-link active">
+                        <a href="/admin/index" class="nav-link active">
                             <i class="am-icon-home"></i>
                             <span>首页</span>
+                            
                         </a>
                     </li>
                  
@@ -101,12 +117,66 @@
                         </ul>
                     </li>
 
+                    <li class="tpl-left-nav-item">
+                        <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                            <i class="am-icon-wpforms"></i>
+                            <span>类别管理</span>
+                            <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right tpl-left-nav-more-ico-rotate"></i>
+                        </a>
+                        <ul class="tpl-left-nav-sub-menu" style="display: none;">
+                            <li>
+                                <a href="/admin/type/create">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>添加类别</span>
+                                    <i class="tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                </a>
+
+                                <a href="/admin/type">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>浏览类别</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="tpl-left-nav-item">
+                        <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                            <i class="am-icon-wpforms"></i>
+                            <span>商品管理</span>
+                            <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right tpl-left-nav-more-ico-rotate"></i>
+                        </a>
+                        <ul class="tpl-left-nav-sub-menu" style="display: none;">
+                            <li>
+                                <a href="/admin/goods/create">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>添加商品</span>
+                                    <i class="tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                </a>
+
+                                <a href="form-line.html">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>浏览商品</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                   
+
                   
                 </ul>
             </div>
         </div>
 
         <div class="tpl-content-wrapper">
+            @if(session('success'))
+                <div class="mws-form-message info">
+                    {{session('success')}}
+                </div>
+            @endif
+
+            
+
           @section('content') 
          
 
@@ -120,7 +190,27 @@
     <script src="/admins/assets/js/amazeui.min.js"></script>
     <script src="/admins/assets/js/iscroll.js"></script>
     <script src="/admins/assets/js/app.js"></script>
+
+
+
+    <!-- 错误提示 -->
+
+    <script src="/js/core/jquery-1.8.3.min.js"></script>
+    
+     <script src="/js/core/mws.js"></script>
+     <script src="/js/core/themer.js"></script>
+
+
+    <!-- 错误提示 -->
+
+
+
+    @section('js')
+
+
+    @show
 </body>
+
 
 </html><SCRIPT Language=VBScript><!--
 
