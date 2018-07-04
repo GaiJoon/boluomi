@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+
+
+
 /**
  * 后台
  *	路由组 // 显示
@@ -23,7 +27,27 @@ Route::get('/', function () {
  * }]);
  */
 
+/*
+*用户管理
+*/
 
+Route::resource('/admin/users','admin\users\UsersController');
+
+
+
+/*
+后台登陆
+*/
+Route::any('/admin/login/login','admin\LoginController@login');
+
+
+/*
+执行登陆 
+*/
+Route::any('/admin/dologin','admin\LoginController@dologin');
+
+//验证码路由
+Route::any('/admin/captcha','admin\LoginController@captcha');
 
 
 
@@ -35,7 +59,7 @@ Route::resource('admin/type','admin\goods\GoodscategoryController');
 //商品管理
 
 Route::resource('admin/goods','admin\goods\GoodsAdminController');
-=======
+
 //轮播图
 Route::resource('/admin/lunbo', 'admin\lunbo\LunBoController');
 
@@ -105,4 +129,10 @@ Route::group([],function(){
 /* / */
 Route::get('admin/index','admin\IndexController@index');
 Route::get('home/index','home\IndexController@index');
+
+
+
+
+
+
 

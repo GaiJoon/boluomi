@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="/admins/assets/css/admin.css">
     <link rel="stylesheet" href="/admins/assets/css/app.css">
     <script src="/admins/assets/js/echarts.min.js"></script>
+<<<<<<< HEAD
 
 
     <!-- Bootstrap -->
@@ -36,6 +37,12 @@
 
     <script src="/admins/assets/js/jquery.min.js"></script>
 >>>>>>> origin/master
+=======
+    <link rel="stylesheet" href="/bs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bs/css/bootstrap-theme.min.css">
+    <script type="text/javascript" src="/bs/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/bs/js/bootstrap.min.js"></script>
+>>>>>>> origin/lyq
 </head>
 
 <body data-type="index">
@@ -57,7 +64,7 @@
 
             <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list tpl-header-list">
                   <li class="tpl-left-nav-item">
-                        <a href="login.html" class="nav-link tpl-left-nav-link-list">
+                        <a href="/admin/login/login" class="nav-link tpl-left-nav-link-list">
                             <i class="am-icon-key"></i>
                             <span>登录</span>
 
@@ -67,15 +74,13 @@
 
                 <li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
                     <a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
-                        <span class="tpl-header-list-user-nick">禁言小张</span><span class="tpl-header-list-user-ico"> <img src="/admins/assets/img/user01.png"></span>
+                        <span class="tpl-header-list-user-nick">{{session('username')}}</span><span class="tpl-header-list-user-ico"> <img src="/admins/assets/img/user01.png"></span>
                     </a>
                     <ul class="am-dropdown-content">
-                        <li><a href="#"><span class="am-icon-bell-o"></span> 资料</a></li>
-                        <li><a href="#"><span class="am-icon-cog"></span> 设置</a></li>
-                        <li><a href="#"><span class="am-icon-power-off"></span> 退出</a></li>
+                       
+                        <li><a href="/admin/logout"><span class="am-icon-power-off"></span> 退出</a></li>
                     </ul>
                 </li>
-                <li><a href="###" class="tpl-header-list-link"><span class="am-icon-sign-out tpl-header-list-ico-out-size"></span></a></li>
             </ul>
         </div>
     </header>
@@ -99,27 +104,29 @@
                  
 
 
-                    <li class="tpl-left-nav-item">
-                        <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
-                            <i class="am-icon-wpforms"></i>
-                            <span>用户管理</span>
-                            <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right tpl-left-nav-more-ico-rotate"></i>
-                        </a>
-                        <ul class="tpl-left-nav-sub-menu" style="display: none;">
-                            <li>
-                                <a href="form-amazeui.html">
-                                    <i class="am-icon-angle-right"></i>
-                                    <span>添加用户</span>
-                                    <i class="tpl-left-nav-content-ico am-fr am-margin-right"></i>
-                                </a>
+                        <li class="tpl-left-nav-item">
+                            <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                                <i class="am-icon-wpforms"></i>
+                                <span>用户管理</span>
+                                <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right tpl-left-nav-more-ico-rotate"></i>
+                            </a>
+                            <ul class="tpl-left-nav-sub-menu" style="display: none;">
+                                <li>
+                                    <a href="/admin/users/create">
+                                        <i class="am-icon-angle-right"></i>
+                                        <span>添加用户</span>
+                                        <i class="tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                    </a>
 
-                                <a href="form-line.html">
-                                    <i class="am-icon-angle-right"></i>
-                                    <span>浏览用户</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+                                    <a href="/admin/users">
+                                        <i class="am-icon-angle-right"></i>
+                                        <span>浏览用户</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+
                     <li class="tpl-left-nav-item">
                         <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
                             <i class="am-icon-wpforms"></i>
@@ -128,6 +135,7 @@
                         </a>
                         <ul class="tpl-left-nav-sub-menu" style="display: none;">
                             <li>
+
                                 <a href="/admin/lunbo/create">
                                     <i class="am-icon-angle-right"></i>
                                     <span>添加轮播</span>
@@ -137,10 +145,10 @@
                                 <a href="form-line.html">
                                     <i class="am-icon-angle-right"></i>
                                     <span>浏览轮播</span>
-                                </a>
                             </li>
                         </ul>
-                    </li>
+                    
+
 
                     <li class="tpl-left-nav-item">
                         <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
@@ -150,6 +158,7 @@
                         </a>
                         <ul class="tpl-left-nav-sub-menu" style="display: none;">
                             <li>
+
                                 <a href="/admin/type/create">
                                     <i class="am-icon-angle-right"></i>
                                     <span>添加类别</span>
@@ -167,27 +176,25 @@
                     <li class="tpl-left-nav-item">
                         <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
                             <i class="am-icon-wpforms"></i>
-                            <span>商品管理</span>
+                            <span>友情链接管理</span>
                             <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right tpl-left-nav-more-ico-rotate"></i>
                         </a>
                         <ul class="tpl-left-nav-sub-menu" style="display: none;">
                             <li>
-                                <a href="/admin/goods/create">
+
+                                <a href="/admin/friend/create">
                                     <i class="am-icon-angle-right"></i>
-                                    <span>添加商品</span>
+                                    <span>添加类别</span>
                                     <i class="tpl-left-nav-content-ico am-fr am-margin-right"></i>
                                 </a>
 
-                                <a href="form-line.html">
+                                <a href="/admin/friend">
                                     <i class="am-icon-angle-right"></i>
-                                    <span>浏览商品</span>
+                                    <span>浏览类别</span>
                                 </a>
                             </li>
                         </ul>
                     </li>
-
-                   
-
                   
                 </ul>
             </div>
@@ -216,6 +223,7 @@
     <script src="/admins/assets/js/iscroll.js"></script>
     <script src="/admins/assets/js/app.js"></script>
 
+<<<<<<< HEAD
 
 
     <!-- 错误提示 -->
@@ -234,6 +242,12 @@
 
 
     @show
+=======
+@section('js')
+
+@show
+
+>>>>>>> origin/lyq
 </body>
 
 

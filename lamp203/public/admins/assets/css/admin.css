@@ -316,6 +316,10 @@ ul {
   padding: .5rem;
 }
 
+.table-main button {
+  background: red;
+  color:#fff;
+}
 
 
 .table-check {
