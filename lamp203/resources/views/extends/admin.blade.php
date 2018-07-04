@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="/admins/assets/css/app.css">
     <script src="/admins/assets/js/echarts.min.js"></script>
 
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="/bs/css/bootstrap.min.css">
     <script src='/bs/js/jquery.min.js'></script>
@@ -32,6 +33,9 @@
 
 
 
+
+    <script src="/admins/assets/js/jquery.min.js"></script>
+>>>>>>> origin/master
 </head>
 
 <body data-type="index">
@@ -112,6 +116,27 @@
                                 <a href="form-line.html">
                                     <i class="am-icon-angle-right"></i>
                                     <span>浏览用户</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="tpl-left-nav-item">
+                        <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                            <i class="am-icon-wpforms"></i>
+                            <span>广告轮播管理</span>
+                            <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right tpl-left-nav-more-ico-rotate"></i>
+                        </a>
+                        <ul class="tpl-left-nav-sub-menu" style="display: none;">
+                            <li>
+                                <a href="/admin/lunbo/create">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>添加轮播</span>
+                                    <i class="tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                </a>
+
+                                <a href="form-line.html">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>浏览轮播</span>
                                 </a>
                             </li>
                         </ul>
