@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="/admins/assets/css/admin.css">
     <link rel="stylesheet" href="/admins/assets/css/app.css">
     <script src="/admins/assets/js/echarts.min.js"></script>
-<<<<<<< HEAD
+
 
 
     <!-- Bootstrap -->
@@ -32,17 +32,6 @@
     <link rel="stylesheet" href="/css/error.css">
 
 
-
-
-
-    <script src="/admins/assets/js/jquery.min.js"></script>
->>>>>>> origin/master
-=======
-    <link rel="stylesheet" href="/bs/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/bs/css/bootstrap-theme.min.css">
-    <script type="text/javascript" src="/bs/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/bs/js/bootstrap.min.js"></script>
->>>>>>> origin/lyq
 </head>
 
 <body data-type="index">
@@ -223,7 +212,7 @@
     <script src="/admins/assets/js/iscroll.js"></script>
     <script src="/admins/assets/js/app.js"></script>
 
-<<<<<<< HEAD
+
 
 
     <!-- 错误提示 -->
@@ -242,12 +231,7 @@
 
 
     @show
-=======
-@section('js')
 
-@show
-
->>>>>>> origin/lyq
 </body>
 
 
