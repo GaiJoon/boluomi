@@ -173,13 +173,13 @@
 
                                 <a href="/admin/friend/create">
                                     <i class="am-icon-angle-right"></i>
-                                    <span>添加类别</span>
+                                    <span>添加友情链接</span>
                                     <i class="tpl-left-nav-content-ico am-fr am-margin-right"></i>
                                 </a>
 
                                 <a href="/admin/friend">
                                     <i class="am-icon-angle-right"></i>
-                                    <span>浏览类别</span>
+                                    <span>浏览友情链接</span>
                                 </a>
                             </li>
                         </ul>
