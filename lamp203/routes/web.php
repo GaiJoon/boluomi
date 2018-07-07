@@ -31,6 +31,7 @@ Route::resource('admin/type','admin\goods\GoodscategoryController');
 
 
 
+
 //商品管理
 
 Route::resource('admin/goods','admin\goods\GoodsAdminController');
