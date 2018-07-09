@@ -22,6 +22,11 @@ Route::get('/', function () {
 *后台路由组
 */
 
+<<<<<<< HEAD
+=======
+Route::resource('/admin/users','admin\users\UsersController');
+// Route::any('/admin/usersxq/{id}','admin\users\UsersController');
+>>>>>>> origin/gyz
 
  Route::group([],function(){
 		// 友情链接资源路由
@@ -36,9 +41,12 @@ Route::get('/', function () {
 		 Route::any('/admin/captcha','admin\LoginController@captcha');
 
  });
+<<<<<<< HEAD
  
 Route::resource('/admin/users','admin\users\UsersController');
 // Route::any('/admin/usersxq/{id}','admin\users\UsersController');
+=======
+>>>>>>> origin/gyz
 
 
 
