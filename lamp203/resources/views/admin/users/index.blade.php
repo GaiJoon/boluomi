@@ -5,7 +5,7 @@
 
 @section('content')
 
-   <!--  @if(session('info'))
+<!--     @if(session('info'))
     <div class="mws-form-message warinig">
        {{session('info')}}
     </div>  

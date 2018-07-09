@@ -90,7 +90,7 @@
                                                 <li><a href="products.html">Sewing Machine</a></li>
                                                 <li><a href="products.html">Heaters & Fans</a></li>
                                             </ul>
-                                        </li>
+                                            </li>
                                         <li class="has-children">
                                             <a href="#">SMALL DEVICES</a>
                                             <ul class="is-hidden">

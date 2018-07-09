@@ -18,41 +18,36 @@ Route::get('/', function () {
 
 
 
-
-/**
- * 后台
- *	路由组 // 显示
- * Route::group(['',function(){
- *	 Route::any('','');
- * }]);
- */
-
 /*
-*用户管理
+*后台路由组
 */
 
 Route::resource('/admin/users','admin\users\UsersController');
 // Route::any('/admin/usersxq/{id}','admin\users\UsersController');
 
+ Route::group([],function(){
+		// 友情链接资源路由
+		 Route::resource('/admin/friend','admin\friend\FriendController');
+		 // 后台用户管理
+		 Route::resource('/admin/users','admin\users\UsersController');
+		// 后台登陆
+		 Route::any('/admin/login/login','admin\LoginController@login');
+		 // 执行登陆
+		 Route::any('/admin/dologin','admin\LoginController@dologin');
+		 // 验证码路由
+		 Route::any('/admin/captcha','admin\LoginController@captcha');
 
-/*
-后台登陆
-*/
-Route::any('/admin/login/login','admin\LoginController@login');
+ });
 
 
-/*
-执行登陆 
-*/
-Route::any('/admin/dologin','admin\LoginController@dologin');
 
-//验证码路由
-Route::any('/admin/captcha','admin\LoginController@captcha');
+
 
 
 
 //类别管理
 Route::resource('admin/type','admin\goods\GoodscategoryController');
+
 
 
 
@@ -65,14 +60,6 @@ Route::resource('/admin/lunbo', 'admin\lunbo\LunBoController');
 Route::get('/admin/lunbo/shangjia/{id}','admin\lunbo\LunBoController@shangjia');
 Route::get('/admin/lunbo/xiajia/{id}','admin\lunbo\LunBoController@xiajia');
 
-
-/**
- * 前台
- *	路由组 // 显示
- * Route::group(['',function(){
- *	 Route::any('','');
- * }]);
- */
 
 
 /**
