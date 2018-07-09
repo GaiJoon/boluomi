@@ -190,8 +190,8 @@
                         <i class="fa fa-truck" aria-hidden="true"></i>
                     </div>
                     <div class="ftr-top-right">
-                        <h4>快速送货</h4>
-                        <p>你只要坐在家里稍稍等待,货物就送到您家,</p>
+                        <h4>急速送货</h4>
+                        <p>全国以支持大部分地区,你只要坐在家里稍稍等待.[特殊地区可能晚到(谅解)]</p>
                     </div>
                     <div class="clearfix"> </div>
                 </div>
@@ -201,7 +201,7 @@
                     </div>
                     <div class="ftr-top-right">
                         <h4>客户关怀</h4>
-                        <p> 七天无理由退货,保障最佳购物舒适感</p>
+                        <p>如果您购买的商品去商品描述不符 支持七天无理由退货,保障最佳购物舒适感</p>
                     </div>
                     <div class="clearfix"> </div>
                 </div>
@@ -211,7 +211,7 @@
                     </div>
                     <div class="ftr-top-right">
                         <h4>高品质</h4>
-                        <p> 官方产品 质量保证 假一赔十</p>
+                        <p> 我们竭尽全力为您提供最优质的服务 :) </p>
                     </div>
                     <div class="clearfix"> </div>
                 </div>

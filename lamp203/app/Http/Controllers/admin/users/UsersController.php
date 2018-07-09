@@ -85,6 +85,8 @@ class UsersController extends Controller
          $res['addtime'] = time();
           // dump($res);
          // 模型添加数据到数据库
+            // $res['uid'];
+            // \DB::
          $data = Users::create($res);
          if($data){
             return redirect('/admin/users')->with('info','添加成功');
@@ -161,4 +163,6 @@ class UsersController extends Controller
             return redirect('/admin/users')->with('success','删除成功');
         }   
     }
+
+    // public function 
 }

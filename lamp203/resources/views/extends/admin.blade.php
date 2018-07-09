@@ -131,7 +131,7 @@
                                     <i class="tpl-left-nav-content-ico am-fr am-margin-right"></i>
                                 </a>
 
-                                <a href="form-line.html">
+                                <a href="/admin/lunbo">
                                     <i class="am-icon-angle-right"></i>
                                     <span>浏览轮播</span>
                             </li>

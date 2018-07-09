@@ -12,7 +12,7 @@
 		<link href="/homes/jsy/AmazeUI-2.4.2/assets/css/amazeui.css" rel="stylesheet" type="text/css" />
 
 		<link href="/homes/jsy/basic/css/demo.css" rel="stylesheet" type="text/css" />
-		<link href="/homes/jsy//css/cartstyle.css" rel="stylesheet" type="text/css" />
+		<link href="/homes/jsy/css/cartstyle.css" rel="stylesheet" type="text/css" />
 
 		<link href="/homes/jsy/css/jsstyle.css" rel="stylesheet" type="text/css" />
 
@@ -110,7 +110,7 @@
 
 										</span>
 									</div>
-									<ins class="deftip">默认地址</ins>
+									<ins class="deftip">默认	地址</ins>
 								</div>
 								<div class="address-right">
 									<a href="../person/address.html">
@@ -170,28 +170,10 @@
 						<div class="clear"></div>
 					</div>
 					<!--物流 -->
-					<div class="logistics">
-						<h3>选择物流方式</h3>
-						<ul class="op_express_delivery_hot">
-							<li data-value="yuantong" class="OP_LOG_BTN  "><i class="c-gap-right" style="background-position:0px -468px"></i>圆通<span></span></li>
-							<li data-value="shentong" class="OP_LOG_BTN  "><i class="c-gap-right" style="background-position:0px -1008px"></i>申通<span></span></li>
-							<li data-value="yunda" class="OP_LOG_BTN  "><i class="c-gap-right" style="background-position:0px -576px"></i>韵达<span></span></li>
-							<li data-value="zhongtong" class="OP_LOG_BTN op_express_delivery_hot_last "><i class="c-gap-right" style="background-position:0px -324px"></i>中通<span></span></li>
-							<li data-value="shunfeng" class="OP_LOG_BTN  op_express_delivery_hot_bottom"><i class="c-gap-right" style="background-position:0px -180px"></i>顺丰<span></span></li>
-						</ul>
-					</div>
+					
 					<div class="clear"></div>
 
-					<!--支付方式-->
-					<div class="logistics">
-						<h3>选择支付方式</h3>
-						<ul class="pay-list">
-							<li class="pay card"><img src="/homes/jsy/images/wangyin.jpg" />银联<span></span></li>
-							<li class="pay qq"><img src="/homes/jsy/images/weizhifu.jpg" />微信<span></span></li>
-							<li class="pay taobao"><img src="/homes/jsy/images/zhifubao.jpg" />支付宝<span></span></li>
-						</ul>
-					</div>
-					<div class="clear"></div>
+					
 
 					<!--订单 -->
 					<div class="concent">

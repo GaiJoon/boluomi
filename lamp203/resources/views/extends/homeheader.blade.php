@@ -26,7 +26,7 @@
     <link href="/homes/css/font-awesome.css" rel="stylesheet">
     <!-- //font-awesome icons -->
     <!-- js -->
-    <script src="/homes/js/jquery-2.2.3.min.js"></script>
+    <script src="/homes/js/jquery-3.2.1.min.js"></script>
     <!-- //js -->
     <!-- web-fonts -->
     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
