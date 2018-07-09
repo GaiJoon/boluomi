@@ -22,6 +22,7 @@ Route::get('/', function () {
 *后台路由组
 */
 
+
  Route::group([],function(){
 		// 友情链接资源路由
 		 Route::resource('/admin/friend','admin\friend\FriendController');
@@ -36,6 +37,9 @@ Route::get('/', function () {
 
  });
  
+Route::resource('/admin/users','admin\users\UsersController');
+// Route::any('/admin/usersxq/{id}','admin\users\UsersController');
+
 
 
 
@@ -54,7 +58,8 @@ Route::resource('admin/goods','admin\goods\GoodsAdminController');
 
 //轮播图
 Route::resource('/admin/lunbo', 'admin\lunbo\LunBoController');
-
+Route::get('/admin/lunbo/shangjia/{id}','admin\lunbo\LunBoController@shangjia');
+Route::get('/admin/lunbo/xiajia/{id}','admin\lunbo\LunBoController@xiajia');
 
 
 
@@ -65,6 +70,12 @@ Route::resource('/admin/lunbo', 'admin\lunbo\LunBoController');
 Route::group([], function(){
 	//购物车显示
 	Route::any('/cart/index','home\goodscar\GoodscarhomeController@index');
+	//ajax
+	Route::any('/home/ajaxcart','home\goodscar\GoodscarhomeController@delete');
+	Route::any('/home/jia','home\goodscar\GoodscarhomeController@jia');
+	Route::any('/home/jian','home\goodscar\GoodscarhomeController@jian');
+	Route::any('/home/zongjia','home\goodscar\GoodscarhomeController@zongjia');
+	Route::any('/home/cun','home\goodscar\GoodscarhomeController@cun');
 	//详情页提交购物车
     Route::get('/cart/{id}','home\goodscar\GoodscarhomeController@save'); 
     
@@ -88,8 +99,12 @@ Route::group([],function(){
 	Route::any('/homeuser/index','home\usershome\UsersHomeController@index');
 	//个人资料
 	Route::any('/homeuser/firstuser','home\usershome\UsersHomeController@firstuser');
+	Route::any('/homeuser/dofirstuser/{id}','home\usershome\UsersHomeController@dofirstuser');
 	//个人地址
 	Route::any('/homeuser/path','home\usershome\UsersHomeController@path');
+	Route::any('/homeuser/dopath','home\usershome\UsersHomeController@dopath');
+	Route::any('/homeuser/pathajax','home\usershome\UsersHomeController@pathajax');
+	Route::any('/homeuser/ajaxdelete','home\usershome\UsersHomeController@ajaxdelete');
 	
 
 });
