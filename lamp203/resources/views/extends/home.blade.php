@@ -152,8 +152,8 @@
                     <h6>你的商店 . 你的地方</h6>
                 </div>
                 <div class="header-search">
-                    <form action="#" method="post">
-                        <input type="search" name="Search" placeholder="你想要的货物....." required="">
+                    <form action="/home/list" method="get">
+                        <input type="search" name="search" placeholder="你想要的货物....." required="">
                         <button type="submit" class="btn btn-default" aria-label="Left Align">
                             <i class="fa fa-search" aria-hidden="true"> </i>
                         </button>
@@ -164,10 +164,10 @@
                         <a href="contact.html"><i class="fa fa-map-marker" aria-hidden="true"></i> 联系我们</a>
                     </div>
                     <div class="cart">
-                        <form action="/cart/index" method="post" class="last">
+                        <form action="/" method="post" class="last">
+
+
                                 {{csrf_field()}}
-                            <!-- <input type="hidden" name="cmd" value="_cart" /> -->
-                            <!-- <input type="hidden" name="display" value="1" /> -->
                             <button class="w3view-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
                         </form>
                     </div>
@@ -177,6 +177,7 @@
             </div>
         </div>
         <!-- //header-two -->
+
 @section('content')
 
 @show

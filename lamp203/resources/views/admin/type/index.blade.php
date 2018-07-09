@@ -47,7 +47,7 @@
                         	@foreach ($res as $k)
 							
                             <tr>
-                                <td>{{$k->tid}}</td>
+                                <td>{{$k->id}}</td>
                                 <?php 
 									$n = substr_count($k->path,',')-1;
 								?>
@@ -57,8 +57,8 @@
                                 <td class="am-hide-sm-only">{{$k->path}}</td>
                                 <td>
                                    
-                                    <a href="/admin/type/{{$k->tid}}/edit" class=" btn btn-info">修改</a>
-									<form action="/admin/type/{{$k->tid}}" method="post" style='display:inline'>
+                                    <a href="/admin/type/{{$k->id}}/edit" class=" btn btn-info">修改</a>
+									<form action="/admin/type/{{$k->id}}" method="post" style='display:inline'>
 										{{csrf_field()}}
 
                                 {{method_field('DELETE')}}

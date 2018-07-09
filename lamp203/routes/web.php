@@ -38,19 +38,39 @@ Route::get('/', function () {
  
 
 
+/**
+ *	丁许峰  后台 路由组
+ */
+
+Route::group([],function(){
+	//类别管理
+	Route::resource('admin/type','admin\goods\GoodscategoryController');
+
+
+	//商品管理
+
+	Route::resource('admin/goods','admin\goods\GoodsAdminController');
+
+
+
+});
+
+
+/**
+ * DingXuFeng  前台路由组
+ */
+Route::group([],function(){
+	//前台商品列表管理
+	Route::any('home/list','home\goods\GoodsController@index');
+	Route::any('home/details/{id}','home\goods\GoodsController@show');
+
+
+});
 
 
 
 
-//类别管理
-Route::resource('admin/type','admin\goods\GoodscategoryController');
 
-
-
-
-//商品管理
-
-Route::resource('admin/goods','admin\goods\GoodsAdminController');
 
 //轮播图
 Route::resource('/admin/lunbo', 'admin\lunbo\LunBoController');
@@ -110,8 +130,11 @@ Route::group([],function(){
 
 
 
-/* / */
+/**
+ * 		前  后  台   首页
+ */
 Route::get('admin/index','admin\IndexController@index');
+
 Route::get('home/index','home\IndexController@index');
 
 

@@ -59,14 +59,14 @@
                             	 <div class="am-form-group">
                                     <label for="user-name" class="am-u-sm-3 am-form-label">商品分类</label>
                                     <div class="am-u-sm-9">
-                                        <select name="tid">
+                                        <select name="id">
                                         	<option value="0">顶级分类</option>
 												@foreach ($res as $k=>$v)
 
 														<?php 
 															$n = substr_count($v->path,',')-1;
 														?>
-														<option  value="{{$v->tid}}">{{str_repeat('&nbsp;',$n*7)}}|--{{$v->tname}}</option>
+														<option  value="{{$v->id}}">{{str_repeat('&nbsp;',$n*7)}}|--{{$v->tname}}</option>
 												@endforeach
                                         </select>
                                     </div>

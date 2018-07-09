@@ -42,6 +42,16 @@ class Goods extends Model
     }
 
 
+    /**
+     *  关联 商品类别
+     * @return [type] [description]
+     */
+    public function type()
+    {
+        return $this->belongsTo('App\Models\Goods\Type','tid');
+    }
+
+
    
 
 }

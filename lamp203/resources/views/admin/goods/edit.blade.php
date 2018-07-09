@@ -39,13 +39,13 @@
                             	 <div class="am-form-group">
                                     <label for="user-name" class="am-u-sm-3 am-form-label" >商品分类</label>
                                     <div class="am-u-sm-9">
-                                        <select name="tid" disabled>
+                                        <select name="id" disabled>
                                             <option value="0">顶级分类</option>
                                                 @foreach ($cate as $k=>$v)
                                                         <?php 
                                                             $n = substr_count($v->path,',')-1;
                                                         ?>
-                                                        <option  value="{{$v->tid}}" @if($v->tid == $goodsone->tid) selected @endif>{{str_repeat('&nbsp;',$n*7)}}|--{{$v->tname}}</option>
+                                                        <option  value="{{$v->id}}" @if($v->id == $goodsone->tid) selected @endif>{{str_repeat('&nbsp;',$n*7)}}|--{{$v->tname}}</option>
                                                 @endforeach
                                         </select>
                                     </div>

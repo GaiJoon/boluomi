@@ -66,7 +66,7 @@ class GoodsAdminController extends Controller
 
         
         
-        $res = Type::select(DB::raw('*,concat(path,tid) as paths'))->
+        $res = Type::select(DB::raw('*,concat(path,id) as paths'))->
                 orderBy('paths')->
                 where('tname','like','%'.$request->input('search').'%')->
 
@@ -181,7 +181,7 @@ class GoodsAdminController extends Controller
      */
     public function edit($id)
     {
-        $cate = Type::select(DB::raw('*,concat(path,tid) as paths'))->
+        $cate = Type::select(DB::raw('*,concat(path,id) as paths'))->
                 orderBy('paths')->
                 get();
             
